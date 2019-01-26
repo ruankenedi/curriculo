@@ -1,4 +1,67 @@
-body {
-  background-color: black;
-  color: white;
+@font-face {
+  font-family: Ubuntu;
+  src: url("../font/ubuntu-font-family-0.83/Ubuntu-R.ttf")
+}
+
+#app {
+  font-family: Ubuntu;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.header, .section {
+  margin: auto;
+  max-width: 904px;
+  padding: 56px;
+}
+
+.header--border-bottom, .section--border-bottom {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: yellow;
+  }
+
+
+}
+
+@media (max-width: 646px) {
+
+}
+
+@media (max-width: 527px) {
+  body {
+    background-color: blue;
+  }
+
+  #img {
+    text-align: center;
+    /* background-color: purple; */
+  }
+
+  .header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header, .section {
+    padding: 42px;
+    background-color: orange;
+  }
 }
